@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "scm_tarball"
-  s.version     = "0.0.0"
+  s.version     = "0.0.1"
   s.summary     = "SCM tarball plugin"
   s.description = "SCM tarball plugin"
   s.authors     = ["Christian Fritsch"]
