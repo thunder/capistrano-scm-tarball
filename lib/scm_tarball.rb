@@ -3,7 +3,7 @@ require "capistrano/scm/plugin"
 # By convention, Capistrano plugins are placed in the
 # Capistrano namespace. This is completely optional.
 module Capistrano
-  class TarballPlugin < ::Capistrano::SCM::Plugin
+  class ScmTarballPlugin < ::Capistrano::SCM::Plugin
 
     def set_defaults
       # Define any variables needed to configure the plugin.
