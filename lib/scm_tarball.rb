@@ -15,7 +15,7 @@ module Capistrano
       # to choose a name that matches your plugin name.
       namespace :tarball do
         task :set_current_revision do
-          set :current_revision, "25"
+          set :current_revision, ENV['REVISION']
         end
 
         task :create_release do
