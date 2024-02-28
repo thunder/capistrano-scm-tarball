@@ -26,6 +26,7 @@ module Capistrano
             upload! fetch(:archive_path), '/tmp'
             @archive_name = File.basename(fetch(:archive_path))
             execute :tar, "-xzf", "/tmp/#{@archive_name}", "-C", release_path
+            execute :chmod, "u+w", "#{@release_path}/docroot/sites/default"
             execute :rm, "/tmp/#{@archive_name}"
           end
         end
